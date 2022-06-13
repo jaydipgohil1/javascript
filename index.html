@@ -20,7 +20,7 @@
             document.getElementById("demo").innerHTML = "Hello Jaydip!";
             document.getElementById("demo2").innerHTML = "jaydip  gohil";
             document.getElementById("demo3").innerHTML = Date();
-            none(); 
+            none();
         }
         function hide() {
             document.getElementById("demo").innerHTML = document.getElementById("demo2").innerHTML = document.getElementById("demo3").innerHTML = "";
@@ -35,17 +35,17 @@
             document.getElementById("hide").style.display = "block";
         }
         function imageshow() {
-            x = document.getElementById("imageshow");
+            const x = document.getElementById("imageshow");
             x.style.display = "block";
             x.style.position = "absolute";
             x.style.top = 0;
             x.style.right = 0;
             x.style.zindex = 1;
-            x.style.margin="10px";
-            y=document.getElementById("my-3-img").style.width="50px";
+            x.style.margin = "10px";
+            y = document.getElementById("my-3-img").style.width = "50px";
+
+
         }
-        
-        print("xyz");
     </script>
 </head>
 
@@ -64,20 +64,66 @@
         Me to hide</button>
 
     <br>
-
-    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
     <img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
     <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+
+
 
     <h1 onmouseover="document.getElementById('demo-4').innerHTML = 'Hi I Am Jaydip Gohil'"
         onmouseout="document.getElementById('demo-4').innerHTML = 'Hover me'" id="demo-4">Hover me</h1>
 
-    <div onmouseover=" document.getElementById('my-2-img').src='pic_bulbon.gif'"
-        onmouseout=" document.getElementById('my-2-img').src='pic_bulboff.gif'" style="width:fit-content"
-        onclick="imageshow()"> <img id="my-2-img" src="pic_bulboff.gif" style="width:100px"></div>
+    <div onmouseover=" document.getElementById('my-2-img').src='pic_bulbon.gif';document.getElementById('bulb_status').innerHTML = 'Switch ON';"
+        onmouseout=" document.getElementById('my-2-img').src='pic_bulboff.gif';document.getElementById('bulb_status').innerHTML = 'Switch OFF';"
+        style="width:fit-content" onclick="imageshow()"> <img id="my-2-img" src="pic_bulboff.gif" style="width:100px">
+    </div>
     <div id="imageshow" style="display:none"> <img id="my-3-img" src="pic_bulbon.gif" style="width:100px"></div>
+    <p id="bulb_status">Switch OFF</p>
+
+    <script>
+
+
+
+        let x = 5 + 5;
+        document.write("<br>" + x);
+        let y = "5" + 5;
+        document.write("<br>" + y);
+        let z = "Hello" + 5;
+        document.getElementById("demo").innerHTML =
+            x + "<br>" + y + "<br>" + z;
+    </script>
+    <script>//color
+        function white() { document.body.style.color = "white"; }
+        function black() { document.body.style.backgroundColor = "black"; white() }
+        function red() { document.body.style.backgroundColor = "red"; white() }
+        function green() { document.body.style.backgroundColor = "green"; white() }
+        function normal() { document.body.style.backgroundColor = "white"; document.body.style.color = "black"; }
+    </script>
+    <button id="normal" class="text-black p-25 m-25 bg-gradient" onclick="normal()">black</button>
+    <button id="black" class="text-white p-25 m-25 bg-black" onclick="black()">black</button>
+    <button id="red" class="text-white p-25 m-25 bg-danger " onclick="red()">red</button>
+    <button id="green" class="text-white p-25 m-25" style="background-color:green" onclick="green()">green</button>
+
+    <script>
+        let u = 10;
+        let a = "1 0";
+        if (u !== a) {
+            document.write("true");
+        }
+        else {
+            document.write("false");
+        }
+        document.write(typeof (u));
+        var c;
+        c = x;
+
+        document.write("<br>");
+        document.write(10 & 2);
+    
+    </script>
+
+
 </body>
 
 </html>
