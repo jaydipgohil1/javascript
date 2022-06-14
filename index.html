@@ -120,8 +120,48 @@
 
         document.write("<br>");
         document.write(10 & 2);
-    
+
+        // console.log(xa);
+        const man = {
+            name: "jaydip",
+            age: 24
+
+        };
+
+
     </script>
+    <p>This example calls a function which performs a calculation, and returns the result:</p>
+    <p id="function"></p>
+    <script>
+        function myFunction(p1, p2) {
+            document.writeln("j");
+            return p1 * p2;
+        }
+        document.getElementById("function").innerHTML = myFunction(5, 4);
+        {
+            const car = {
+                name: "jaydip gohil",
+                study: "Mca",
+                y: 2022
+            };
+            console.log("name :" + car.name + "\n" +
+                "study :" + car.study + "\n" +
+                "passing year :" + car.y + "\n"
+            );
+            const person = {
+                firstName: "John",
+                lastName: "Doe",
+                id: 5566,
+                fullName: function () {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+            console.log(person.fullName() + "\n");
+            console.log(car['name'] + " " + car["study"]);
+        }
+    </script>
+
+
 
 
 </body>
