@@ -160,6 +160,24 @@
             console.log(car['name'] + " " + car["study"]);
         }
     </script>
+    <button id="demo_click_btn" onclick="document.getElementById('demo_click_btn').innerHTML=Date();alert(Date())">The
+        time is?</button>
+    <button onclick="this.innerHTML=Date()">click to get Time</button>
+    <script>
+        let a2 = "jaydip";
+        let aa = new String("jaydip");
+        console.log(typeof x + "<br>" + aa instanceof String);
+        console.log(aa == a2);
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        console.log(text.length);
+        let str = "Apple, Banana, Kiwi";
+        console.log(str.slice(-8));
+        let email = "gohiljaydip67asda@gmail.com"
+        console.log(email.slice(0, -10));
+        let domain = email.substring(0, email.indexOf('@'));
+        console.log(domain); // Host name
+        console.log(email.substr(0, email.indexOf('@')));
+    </script>
 
 
 
