@@ -164,24 +164,29 @@
         time is?</button>
     <button onclick="this.innerHTML=Date()">click to get Time</button>
     <script>
-        let a2 = "jaydip";
-        let aa = new String("jaydip");
-        console.log(typeof x + "<br>" + aa instanceof String);
-        console.log(aa == a2);
-        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        console.log(text.length);
-        let str = "Apple, Banana, Kiwi";
-        console.log(str.slice(-8));
-        let email = "gohiljaydip67asda@gmail.com"
-        console.log(email.slice(0, -10));
-        let domain = email.substring(0, email.indexOf('@'));
-        console.log(domain); // Host name
-        console.log(email.substr(0, email.indexOf('@')));
+        {
+            let a2 = "jaydip";
+            let aa = new String("jaydip");
+            console.log(typeof x + "<br>" + aa instanceof String);
+            console.log(aa == a2);
+            let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            console.log(text.length);
+            let str = "Apple, Banana, Kiwi";
+            console.log(str.slice(-8));
+            let email = "gohiljaydip67@gmail.com"
+            console.log(email.slice(0, -10));
+            let domain = email.substring(0, email.indexOf('@'));
+            console.log(domain); // Host name
+            console.log(email.substr(0, email.indexOf('@')));
+            console.log(email = email.replace(/[0-9]/g, ''));
+            console.log(email.substring(0, (email.indexOf('@'))));
+            console.log(email.toUpperCase());
+            console.log(text.toLowerCase());
+            let text1 = "Jaydip";
+            let text2 = "Gohil";
+            console.log(text1.concat(" ", text2));
+        }
     </script>
-
-
-
-
 </body>
 
 </html>
