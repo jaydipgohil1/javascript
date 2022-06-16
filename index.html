@@ -195,7 +195,42 @@
             let y = 3;
             document.write("<br>" + x + "<br>" + y);
         }
-        
+        {
+            const cars = ["jaydip", "gohil", "saab", "bMW"];
+            console.log("<br>" + cars);
+            document.write("<br>" + cars);
+            document.write("<br>" + cars.sort());
+            document.write("<br>" + cars.length);
+        }
+        {
+            const name = ["jaydip", "gohil"];
+            document.write("<br>" + name);
+
+        }
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+        document.write(text);
+
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        } 
+    </script>
+    <p id="sift1"></p>
+    <p id="sift2"></p>
+    
+    <button onclick="shift()">shift</button>
+    <script>{
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("sift1").innerHTML = fruits;    
+            function shift() {
+                let last = fruits[0];
+                fruits.shift();
+                fruits.push(last);
+                document.getElementById("sift2").innerHTML = fruits;
+            }
+        }
     </script>
 </body>
 
