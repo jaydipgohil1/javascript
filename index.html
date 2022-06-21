@@ -67,10 +67,6 @@
     <img id="myImage" src="pic_bulboff.gif" style="width:100px">
     <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
     <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
-
-
-
     <h1 onmouseover="document.getElementById('demo-4').innerHTML = 'Hi I Am Jaydip Gohil'"
         onmouseout="document.getElementById('demo-4').innerHTML = 'Hover me'" id="demo-4">Hover me</h1>
 
@@ -82,9 +78,6 @@
     <p id="bulb_status">Switch OFF</p>
 
     <script>
-
-
-
         let x = 5 + 5;
         document.write("<br>" + x);
         let y = "5" + 5;
@@ -127,8 +120,6 @@
             age: 24
 
         };
-
-
     </script>
     <p>This example calls a function which performs a calculation, and returns the result:</p>
     <p id="function"></p>
@@ -197,7 +188,7 @@
         }
         {
             const cars = ["jaydip", "gohil", "saab", "bMW"];
-            console.log("<br>" + cars);
+            console.log("" + cars);
             document.write("<br>" + cars);
             document.write("<br>" + cars.sort());
             document.write("<br>" + cars.length);
@@ -205,7 +196,6 @@
         {
             const name = ["jaydip", "gohil"];
             document.write("<br>" + name);
-
         }
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         let text = "<ul>";
@@ -219,11 +209,10 @@
     </script>
     <p id="sift1"></p>
     <p id="sift2"></p>
-    
     <button onclick="shift()">shift</button>
     <script>{
             const fruits = ["Banana", "Orange", "Apple", "Mango"];
-            document.getElementById("sift1").innerHTML = fruits;    
+            document.getElementById("sift1").innerHTML = fruits;
             function shift() {
                 let last = fruits[0];
                 fruits.shift();
@@ -232,6 +221,81 @@
             }
         }
     </script>
+
+
+
+
+    <script>
+        let array1 = [
+            { id: 3, name: "jaydip", lang: "javascript" },
+            { id: 1, name: "gautam", lang: "python" },
+            { id: 2, name: "jay", lang: "node" },
+            { id: 4, name: "harshil", lang: "python" }
+        ];
+
+        const array2 = array1.map(myFunction);
+        console.log("gsutam", array1);
+        // document.write(array2.name + "," + array2.lang);
+        function myFunction(value, index, array) {
+            if (value.name == "gautam") {
+                // console.log(index);
+                value.lang = "php";
+            }
+            return value;
+        }
+        console.log("array1", array1);
+
+        const sort = array1.sort(function (a, b) { return a.id - b.id });
+        console.log(array1);
+        let txt = "";
+        sort.forEach(myFunction2);
+        function myFunction2(value, index, array) {
+            txt += "<br>" + value.id + "-" + value.name + "-" + value.lang + "<br>";
+        }
+        document.write("<br>sorting<br>");
+        document.write(txt);
+
+        let python = "";
+        sort.filter(myFunction3);
+        document.write("<br>python<br>");
+        document.write(python);
+        function myFunction3(value, index, array) {
+            if (value.lang == "python") {
+                return python += "<br>" + value.id + "-" + value.name + "-" + value.lang + "<br>";
+            }
+            // return python;
+        }
+
+
+    </script>
+    <script>
+        document.write("<br>date<br>");
+        const d = new Date();
+        document.write(d);
+        document.write(Math.trunc(4.9) + "<br>");
+        document.write(Math.trunc(4.7) + "<br>");
+        document.write(Math.trunc(4.4) + "<br>");
+        document.write(Math.trunc(4.2) + "<br>");
+        document.write(Math.trunc(-4.2) + "<br>");
+
+        document.write(Math.sign(30) + "<br>");
+        // expected output: 1
+
+        document.write(Math.sign(-03) + "<br>");
+        // expected output: -1
+
+        document.write(Math.sign('-0') + "<br>");
+        // expected output: 0
+
+        document.write(Math.sign('-33') + "<br>");
+        // expected output: -1  
+        document.write( Math.cos(Math.round((1 * Math.PI / 180))));
+     
+
+
+    </script>
 </body>
+<!-- sorting id
+python -->
 
 </html>
