@@ -289,13 +289,59 @@
 
         document.write(Math.sign('-33') + "<br>");
         // expected output: -1  
-        document.write( Math.cos(Math.round((1 * Math.PI / 180))));
-     
-
+        document.write(Math.cos(Math.round((1 * Math.PI / 180))));
 
     </script>
+    <!--for-in loop -->
+    <br>
+    <script>
+        const person = {
+            FirstName: "jaydip",
+            SirName: "gohil",
+            Age: "24"
+        };
+        document.write("<br>For-in loop<br>");
+        for (let key in person) {
+            document.write(key + " : " + person[key] + "<br>");
+        }
+        console.log("for-in loop");
+        for (let key in person)//person is objects and key is  index
+        {
+            console.log(key + " : " + person[key]);
+        }
+    </script>
+    <!--for-Of loop -->
+    <br>
+    <script>
+        const object1 = [
+            "FullName : Jaydip Gohil",
+            "Language : Node.js,Php,Javascripts",
+            "DateOfBirth : 01-02-1998",
+            "MarriedStatus : Single",
+            "Address : Derod,Kamrej"
+        ];
+        document.write("<br>For-Of loop<br>");
+        for (let key of object1) {
+            document.write(key + "<br>");
+        }
+
+        console.log("for-of loop");
+
+        for (let key of object1) {
+            console.log(key);
+        }
+        const a1 = [1, 2, 3, 4, 8, 9];
+        for (let index of a1) {
+            document.write("<br>" + index);
+        }
+        document.write("<br>");
+        var s1 = "Jaydip Gohil";
+        for (let index of s1) {
+            document.write("<br>" + index);
+        }
+    </script>
+
 </body>
-<!-- sorting id
-python -->
+
 
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>index2.html-23-06-2022</h2>
+    <hr>
+    <hr><br>
+    set in javascript <br>
+    <script>
+        // Create a Set
+        const letters = new Set();
+
+        // Create Variables
+        const a = "a";
+        const b = "b";
+        const c = "c";
+
+        // Add the Variables to the Set
+        letters.add(a);
+        letters.add(b);
+        letters.add(c);
+
+        // Display set.size
+        console.log("set");
+        for (let x of letters) {
+            document.write(x + ", ");
+            console.log(x);
+        }
+        document.write("<br>");
+    </script>
+    <br>
+    map in javascript <br>
+    <script>
+        // Create a Map
+        const fruits = new Map([
+            ["apples", 500],
+            ["bananas", 300],
+            ["oranges", 200]
+        ]);
+        fruits.set("name", "jaydip")
+        document.write(fruits.get("name"));
+    </script>
+    <script>
+        "use strict";
+
+        {
+
+            // Create a Map
+            const fruits = new Map();
+            xss = 0;
+            // Set Map Values
+            fruits.set("apples", 500);
+            fruits.set("bananas", 300);
+            fruits.set("oranges", 200);
+
+            document.write("<br>" + fruits.get("apples"));
+            fruits.set("apples", 1000);
+            document.write("<br>" + fruits.get("apples"));
+
+            fruits.delete("apples");
+            document.write("<br>" + fruits.get("apples"));
+
+            document.write("<br>");
+            let x = "";
+            fruits.forEach(function (value, key) {
+                document.write(key + "," + value + "<br>");
+            })
+            console.log(fruits);
+            fruits.set("apples", 1000);
+            document.write("<br>");
+            for (let x of fruits.entries()) {
+                document.write(x + "<br>");
+            }
+            document.write(typeof null);
+        }
+        "use strict";
+        // function x(p1, p1) { };   // This will cause an erro
+        let x = 010;  
+    </script>
+      <h2>24-06-2022</h2>
+      <hr>
+      <hr><br>
+
+
+
+</body>
+
+</html>
